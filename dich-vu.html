@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+   <head>
+      <meta charset="utf-8">
+      <title>Foobar Coffee &bull; Dịch vụ</title>
+      <meta name="description" content="Cà phê Foobar">
+      <meta name="author" content="Thin">
+      <link rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" />
+      <link rel="icon" type="image/png" href="/images/icons8-coffee-64.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+   </head>
+   <body>
+      <header>
+        <div class="top-bar">
+            <div class="logo">
+              <a href="index.html"><img alt="Hình logo" src="images/logo.png" width="306" height="53" /></a>
+            </div>
+            <nav>
+              <ul id="menu-items">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="hinh-anh.html">Hình ảnh</a></li>
+                <li><a href="dich-vu.html">Dịch vụ</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+                <li><a id="search-icon" href="#."><img alt="Search icon" src="images/search-icon.png" width="20" height="20" /></a></li>
+              </ul>
+            </nav>
+        </div>
+      </header>
+      <main>
+        <h1 class="heading-center">Dịch vụ</h1>
+        <section class="orange-blocks service">
+          <div>
+            <div class="cups"><img class="coffee-cup" alt="Cup 1" src="images/icon1.png" width="40" height="auto" /></div>
+            <h2>Cà phê nguyên chất</h2>
+            <p>Cà phê được gieo trồng ở những rẫy trên đồi, bán tự nhiên, cho chất lượng cao. Hạt được thu hoạch, rang xay thủ công.</p>
+          </div>
+          <div>
+            <div class="cups"><img class="coffee-cup" alt="Cup 2" src="images/icon2.png" width="40" height="auto" /></div>
+            <h2>20 biến thể khác nhau</h2>
+            <p>Dựa trên nền cà phê nguyên chất, Foobar tạo ra hơn 20 loại thức uống khác nhau đáp ứng khẩu vị các giới ở nhiều độ tuổi.</p>
+          </div>
+          <div>
+            <div class="cups"><img class="coffee-cup" alt="Cup 3" src="images/icon3.png" width="40" height="auto" /></div>
+            <h2>Không gian thoải mái</h2>
+            <p>Foobar có không gian ngoài trời, sân vườn, sân thượng cho khách yêu thiên nhiên. Trong nhà dành cho người thích yên tĩnh, ấm cúng.</p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-row">
+          <div class="footer-col footer-col1">
+            <h1>Giới thiệu</h1>
+            <p>Foobar Coffee là một quán cà phê toạ lạc trên ngọn đồi giáp biển, nhìn ra vịnh Nha Trang. Quán được xây dựng bằng vật liệu thân thiện môi trường.</p>
+          </div>
+          <div class="footer-col footer-col2">
+            <h1>Khám phá</h1>
+            <nav>
+              <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="intro.html">Giới thiệu</a></li>
+                <li><a href="hinh-anh.html">Hình ảnh</a></li>
+                <li><a href="dich-vu.html">Dịch vụ</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col footer-col3">
+            <h1>Tham khảo thêm</h1>
+            <nav>
+              <ul>
+                <li><a href="#">Lịch sử cà phê</a></li>
+                <li><a href="#">Cà phê Việt Nam</a></li>
+                <li><a href="#">Các kiểu pha chế</a></li>
+                <li><a href="#">Cà phê và sức khoẻ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col footer-col4">
+            <h1>Liên hệ</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Núi Cô Tiên - Nha Trang</p>
+            <p><i class="fas fa-phone-volume"></i> 0903.999.999</p>
+            <p><i class="far fa-envelope"></i> contact@foobarcoffee.com</p>
+          </div>
+        </div><!-- footer cols -->
+        <div class="footer-copyright">
+          <p>&copy; 2020. Foobar Coffee giữ bản quyền nội dung.</p>
+        </div>
+      </footer>
+      <script src="js/script.js"></script>
+      <script>
+        window.onload = function () {
+          activeLink();
+          initModal();
+          searchObj.addEventListener("click", searchModal);
+        }
+      </script>
+   </body>
+</html>

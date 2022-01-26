@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+   <head>
+      <meta charset="utf-8">
+      <title>Foobar Coffee &bull; Liên hệ</title>
+      <meta name="description" content="Cà phê Foobar">
+      <meta name="author" content="Thin">
+      <link rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" />
+      <link rel="icon" type="image/png" href="/images/icons8-coffee-64.png">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+   </head>
+   <body>
+      <header>
+        <div class="top-bar">
+          <div class="logo">
+            <a href="index.html"><img alt="Hình logo" src="images/logo.png" width="306" height="53" /></a>
+          </div>
+          <nav>
+            <ul id="menu-items">
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+              <li><a href="hinh-anh.html">Hình ảnh</a></li>
+              <li><a href="dich-vu.html">Dịch vụ</a></li>
+              <li><a href="lien-he.html">Liên hệ</a></li>
+              <li><a id="search-icon" href="#."><img alt="Search icon" src="images/search-icon.png" width="20" height="20" /></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="contact-us">
+          <h1 class="heading-center">Liên hệ</h1>
+          <div class="contact-us-cols">
+            <div class="contact-form-wrapper">
+              <form class="contact-form" method="post" action="contact.php">
+                <input id="fullname" class="contact-input" type="text" name="fullname" placeholder="Họ và tên" /><br />
+                <input id="email" class="contact-input" type="email" name="email" placeholder="E-mail" /><br />
+                <input id="phone" class="contact-input" type="text" name="phone" placeholder="Số ĐT di động" /><br />
+                <textarea id="client-msg" class="contact-area" name="clientmsg"></textarea><br />
+                <button class="contact-submit-button" type="submit">Gửi thông tin</button>
+              </form>
+            </div>
+            <div class="google-map">
+              <img alt="Google Map" src="images/google-map.webp" width="570" height="450" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-row">
+          <div class="footer-col footer-col1">
+            <h1>Giới thiệu</h1>
+            <p>Foobar Coffee là một quán cà phê toạ lạc trên ngọn đồi giáp biển, nhìn ra vịnh Nha Trang. Quán được xây dựng bằng vật liệu thân thiện môi trường.</p>
+          </div>
+          <div class="footer-col footer-col2">
+            <h1>Khám phá</h1>
+            <nav>
+              <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="intro.html">Giới thiệu</a></li>
+                <li><a href="hinh-anh.html">Hình ảnh</a></li>
+                <li><a href="dich-vu.html">Dịch vụ</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col footer-col3">
+            <h1>Tham khảo thêm</h1>
+            <nav>
+              <ul>
+                <li><a href="#">Lịch sử cà phê</a></li>
+                <li><a href="#">Cà phê Việt Nam</a></li>
+                <li><a href="#">Các kiểu pha chế</a></li>
+                <li><a href="#">Cà phê và sức khoẻ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col footer-col4">
+            <h1>Liên hệ</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Núi Cô Tiên - Nha Trang</p>
+            <p><i class="fas fa-phone-volume"></i> 0903.999.999</p>
+            <p><i class="far fa-envelope"></i> contact@foobarcoffee.com</p>
+          </div>
+        </div><!-- footer cols -->
+        <div class="footer-copyright">
+          <p>&copy; 2020. Foobar Coffee giữ bản quyền nội dung.</p>
+        </div>
+      </footer>
+      <script src="js/script.js"></script>
+      <script>
+        window.onload = function () {
+          activeLink();
+          initModal();
+          searchObj.addEventListener("click", searchModal);
+        }
+      </script>
+   </body>
+</html>
